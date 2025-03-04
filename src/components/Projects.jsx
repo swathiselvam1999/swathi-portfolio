@@ -48,9 +48,9 @@ const Projects = () => {
             <div className='flex flex-col gap-10 items-center'>
                 {projectsToShow.map((project, index) => (
                     <div key={index} className={`flex flex-col md:flex-row items-center gap-5 max-w-4xl w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                        <img className='w-[70%] md:w-[20rem] h-auto object-cover rounded-lg' src={project.image} alt={project.title} />
-                        <div className='w-[70%] md:w-1/2 p-5 text-center md:text-left bg-gray-900'>
-                            <h2 className='text-2xl font-bold'>{project.title}</h2>
+                        <img className='w-[80%] md:w-[20rem] h-auto object-cover rounded-lg' src={project.image} alt={project.title} />
+                        <div className='w-[80%] md:w-1/2 p-0 md:p-5 text-center md:text-left bg-gray-900'>
+                            <h2 className='text-xl md:text-2xl font-bold'>{project.title}</h2>
                             <p className='mt-2'>{project.desc}</p>
                             <a className='px-4 py-2 mt-3 inline-flex items-center gap-2 bg-blue-500 text-white font-semibold rounded-full border border-solid  hover:bg-blue-600 transition duration-300 shadow-[0_0_15px_3px_rgba(0,191,255,0.2)]' href={project.link} target='_blank' rel='noopener noreferrer '>View <FiExternalLink /></a>
                         </div>

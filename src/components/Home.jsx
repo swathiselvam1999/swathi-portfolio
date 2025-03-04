@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* Right Section - Profile Image */}
         <div className="relative p-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500">
-          <img src={profile} alt="Avatar" className="h-80 md:w-80 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out hover:scale-105 hover:cursor-pointer" />
+          <img src={profile} alt="Avatar" className="h-[50] w-[50] md:h-80 md:w-80 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out hover:scale-105 hover:cursor-pointer" />
 
         </div>
 
@@ -36,7 +36,7 @@ const Home = () => {
 
           {/* Left Section - Text & Social Icons */}
           <div className="flex flex-col justify-center items-center md:items-start">
-            <h1 className="text-5xl font-extrabold text-blue-400">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-blue-400">
               Hi, I'm <span className="block text-pink-500 mt-2">Swathi Selvam</span>
             </h1>
 
@@ -47,7 +47,7 @@ const Home = () => {
               wrapper="h2"
               speed={50}
               repeat={Infinity}
-              className="text-3xl font-semibold text-green-400 mt-3 items-center md:items-start"
+              className=" text-xl md:text-3xl font-semibold text-green-400 mt-3 items-center md:items-start"
             />
           </div>
 

@@ -41,7 +41,7 @@ const Header = () => {
       >
         <div className="flex max-w-7xl mx-auto justify-between items-center">
           {/* Logo */}
-          <div className="lg:flex items-center text-white text-3xl px-2 py-1 cursor-pointer ">
+          <div className="lg:flex items-center text-white text-2xl md:text-3xl px-2 py-1 cursor-pointer ">
             <motion.div
               href="#home"
               className="flex bg-clip-text text-gray-900 font-bold "

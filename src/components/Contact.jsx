@@ -25,21 +25,21 @@ const Contact = () => {
 
                 {/* ✅ Fixed Image Wrapper */}
                 <div className="flex justify-center items-center rounded-full ">
-                    <img src={contact} alt="Contact" className='h-80 w-80 md:w-80 rounded-full border-4 border-blue-500 bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)]' loading="lazy" />
+                    <img src={contact} alt="Contact" className='h-[60%] w-[60%] md:w-80 rounded-full border-4 border-blue-500 bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)]' loading="lazy" />
                 </div>
 
                 {/* ✅ Fixed Text Section */}
                 <div className='flex flex-col items-center text-center'>
-                    <h3 className='text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-5'>
+                    <h3 className='text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-5'>
                         Get In Touch
                     </h3>
-                    <p className='text-xl mb-10 max-w-md'>
+                    <p className='md:text-xl mb-10 max-w-md'>
                     " Feel free to reach out to me anytime, I'm here to assist and happy to help! " 
                     </p>
 
                     {/* ✅ Fixed Icons Alignment */}
                     <motion.div
-                        className="flex gap-6 text-4xl mt-8"
+                        className="flex gap-6 text-2xl md:text-4xl mt-8"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.5 }}
@@ -59,7 +59,7 @@ const Contact = () => {
                                     transition={{ duration: 0.2, ease: "easeOut", delay: index * 0.2 }}
                                     whileHover={{ scale: 1.1 }}
                                 >
-                                    <Icon className={` ${link.color} transition-transform duration-300 text-4xl hover:scale-110`} />
+                                    <Icon className={` ${link.color} transition-transform duration-300 text-2xl md:text-4xl hover:scale-110`} />
                                 </motion.a>
                             );
                         })}
