@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* Right Section - Profile Image */}
         <div className="relative p-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500">
-          <img src={profile} alt="Avatar" className="h-[40] w-[40] md:h-80 md:w-80 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out hover:scale-105 hover:cursor-pointer" />
+          <img src={profile} alt="Avatar" className="h-[50] w-[50] md:h-80 md:w-80 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out hover:scale-105 hover:cursor-pointer" />
 
         </div>
 

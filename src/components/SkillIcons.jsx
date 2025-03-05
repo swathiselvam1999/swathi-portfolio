@@ -7,13 +7,13 @@ import { Html } from "@react-three/drei";
 
 const SkillIcons = ({ sphereSize }) => {
   const groupRef = useRef();
-  const iconSize = sphereSize === 2 ? 25 : 60;
+  const iconSize = sphereSize === 1.5 ? 20 : sphereSize === 2 ? 30 : 60;
 
   const skillIcons = [
     { icon: <FaHtml5 color="#E34F26" size={iconSize} />, position: [sphereSize + 0.5, 1.5, 0] },
     { icon: <FaCss3 color="#1572B6" size={iconSize} />, position: [-sphereSize - 0.5, 1.5, 0] },
     { icon: <FaJs color="#F7DF1E" size={iconSize} />, position: [0, sphereSize + 0.5, 0] },
-    { icon: <FaReact color="#61DAFB" size={iconSize} />, position: [0, -sphereSize, 0] },
+    { icon: <FaReact color="#61DAFB" size={iconSize} />, position: [0, -sphereSize - 0.5, 0] },
     { icon: <FaNode color="#68A063" size={iconSize} />, position: [2, 2, 0] },
     { icon: <SiMongodb color="#4DB33D" size={iconSize} />, position: [-2, -2, 0] },
     { icon: <SiExpress color="#888888" size={iconSize} />, position: [0, 0, 2] },

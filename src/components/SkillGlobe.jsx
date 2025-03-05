@@ -10,10 +10,12 @@ const SkillGlobe = () => {
 
   useEffect(()=>{
     const handleResize = () => {
-      if(window.innerWidth < 768){
-        setSphereSize(2);
+      if (window.innerWidth < 400) {
+        setSphereSize(1.5); // 🔹 Make the sphere very small for 320px screens
+      } else if (window.innerWidth < 768) {
+        setSphereSize(2); // 🔹 Mobile size (e.g., 375px, 480px)
       } else {
-        setSphereSize(2);
+        setSphereSize(3); // 🔹 Default size for larger screens
       }
     };
 
