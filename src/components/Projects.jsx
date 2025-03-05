@@ -52,7 +52,7 @@ const Projects = () => {
                         <div className='w-[80%] md:w-1/2 p-0 md:p-5 text-center md:text-left bg-gray-900'>
                             <h2 className='text-xl md:text-2xl font-bold'>{project.title}</h2>
                             <p className='mt-2'>{project.desc}</p>
-                            <a className='px-4 py-2 mt-3 inline-flex items-center gap-2 bg-blue-500 text-white font-semibold rounded-full border border-solid  hover:bg-blue-600 transition duration-300 shadow-[0_0_15px_3px_rgba(0,191,255,0.2)]' href={project.link} target='_blank' rel='noopener noreferrer '>View <FiExternalLink /></a>
+                            <a className='px-4 py-2 mt-3 inline-flex items-center gap-2 bg-blue-500 text-white font-semibold rounded-full border border-solid  hover:bg-blue-600 transition-transform hover:scale-105 duration-300 shadow-[0_0_15px_3px_rgba(0,191,255,0.2)] ' href={project.link} target='_blank' rel='noopener noreferrer '>View <FiExternalLink /></a>
                         </div>
                     </div>
                 ))}
@@ -60,7 +60,7 @@ const Projects = () => {
             <div className='flex justify-center mt-5'>
                 <button
                     onClick={projectHandler}
-                    className="px-6 py-2 rounded-full text-white font-bold text-lg border border-blue-500 bg-blue-900 hover:scale-105 transition-transform duration-300"
+                    className="px-4 py-1 md:px-6 md:py-3 flex items-center gap-2 text-white font-bold text-lg rounded-lg border border-gradient-to-r from-blue-500 to-blue-700 transition-all shadow-[0_0_15px_3px_rgba(0,191,255,0.2)] duration-300 bg-blue-900 hover:scale-105"
                 >
                     {showAll ? 'Show Less' : 'Show More'}
                 </button>

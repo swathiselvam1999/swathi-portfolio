@@ -40,7 +40,7 @@ const About = () => {
                             <a
                                 href={resume}
                                 download='swathi_resume.pdf'
-                                className='px-4 py-1 md:px-6 md:py-3 flex items-center gap-2 text-white font-bold text-lg rounded-lg border border-gradient-to-r from-blue-500 to-blue-700 transition-all duration-300 bg-blue-900 hover:scale-105'
+                                className='px-4 py-1 md:px-6 md:py-3 flex items-center gap-2 text-white font-bold text-lg rounded-lg border border-gradient-to-r from-blue-500 to-blue-700 transition-all shadow-[0_0_15px_3px_rgba(0,191,255,0.2)] duration-300 bg-blue-900 hover:scale-105'
                             >
                                 Download Resume < MdOutlineFileDownload />
                             </a>
