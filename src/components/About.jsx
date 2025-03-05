@@ -62,7 +62,7 @@ const About = () => {
                         <div className="absolute w-[17rem] h-[17rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
 
                         {/* Profile Image with Shadow */}
-                        <div className='relative w-50 h-50 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)] '>
+                        <div className='relative h-[60%] w-[60%] md:w-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)] '>
                             <img
                                 src={profile}
                                 alt="Profile"

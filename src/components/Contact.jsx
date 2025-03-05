@@ -25,6 +25,7 @@ const Contact = () => {
 
                 {/* ✅ Fixed Image Wrapper */}
                 <div className="flex justify-center items-center rounded-full ">
+                <div className="absolute w-[15rem] h-[15rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
                     <img src={contact} alt="Contact" className='h-[60%] w-[60%] md:w-80 rounded-full border-4 border-blue-500 bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)]' loading="lazy" />
                 </div>
 

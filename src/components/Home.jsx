@@ -18,17 +18,18 @@ const Home = () => {
       <ParticlesTest />
 
       {/* Main Content */}
-      <div className=" relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center px-6 md:px-12">
+      <div className="relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center px-6 md:px-12">
 
         {/* Right Section - Profile Image */}
-        <div className="relative p-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500">
+        <div className="relative p-1 rounded-full flex justify-center items-center group">
+        <div className="absolute w-[18rem] h-[18rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
 
           <img 
             src={profile} 
             alt="Avatar" 
-            className="h-50 w-50 md:h-72 md:w-72 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out hover:scale-105 hover:cursor-pointer select-none"
-            draggable="false" />
-
+            className="h-[60%] w-[60%] md:w-80 rounded-full border-4 border-transparent animate-flipOnce transition-transform duration-700 shadow-2xl shadow-blue-400 ease-in-out  bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 group-hover:scale-105"
+          />
+        
         </div>
 
         <motion.div
