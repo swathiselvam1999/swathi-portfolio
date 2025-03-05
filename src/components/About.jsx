@@ -40,7 +40,7 @@ const About = () => {
                         <a
                             href={resume}
                             download='swathi_resume.pdf'
-                            className='px-6 py-3 flex items-center gap-2 text-white font-bold text-lg rounded-lg border border-gradient-to-r from-blue-500 to-blue-700 transition-all duration-300 bg-blue-900 hover:scale-105'
+                            className='px-4 py-1 md:px-6 md:py-3 flex items-center gap-2 text-white font-bold text-lg rounded-lg border border-gradient-to-r from-blue-500 to-blue-700 transition-all duration-300 bg-blue-900 hover:scale-105'
                         >
                             Download Resume < MdOutlineFileDownload />
                         </a>
@@ -59,14 +59,14 @@ const About = () => {
                 {/* Right Section - Profile Image */}
                 <div className='flex justify-center items-center relative md:pt-0 pt-10'>
                     {/* Rotating Outer Circle */}
-                    <div className="absolute w-[19rem] h-[19rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
+                    <div className="absolute w-[17rem] h-[17rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
 
                     {/* Profile Image with Shadow */}
                     <div className='relative w-50 h-50 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)] '>
                         <img
                             src={profile}
                             alt="Profile"
-                            className=' w-full h-full object-cover transition-transform duration-500 hover:scale-105'
+                            className=' md:w-full md:h-full object-cover transition-transform duration-500 hover:scale-105'
                         />
 
                         {/* Glowing Effect */}
