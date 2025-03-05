@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import projects from '../assets/projects.jpg';
-import { BiSolidHappyHeartEyes } from 'react-icons/bi';
-import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 
 const Projects = () => {
@@ -47,7 +45,7 @@ const Projects = () => {
             </div>
             <div className='flex flex-col gap-10 items-center'>
                 {projectsToShow.map((project, index) => (
-                    <div key={index} className={`flex flex-col md:flex-row items-center gap-5 max-w-4xl w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                    <div key={index} className={`flex flex-col md:flex-row items-center gap-5 max-w-4xl w-full ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                         <img className='w-[80%] md:w-[20rem] h-auto object-cover rounded-lg' src={project.image} alt={project.title} />
                         <div className='w-[80%] md:w-1/2 p-0 md:p-5 text-center md:text-left bg-gray-900'>
                             <h2 className='text-xl md:text-2xl font-bold'>{project.title}</h2>

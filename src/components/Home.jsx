@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* Right Section - Profile Image */}
         <div className="relative p-1 rounded-full flex justify-center items-center group">
-        <div className="absolute w-[18rem] h-[18rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
+        <div className="absolute w-[14rem] h-[14rem]  md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
 
           <img 
             src={profile} 

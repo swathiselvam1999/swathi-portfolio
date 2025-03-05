@@ -37,7 +37,7 @@ const SkillGlobe = () => {
 
   return (
 
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px]">
       {!isLoaded && (
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-white">Loading...</p>
@@ -47,7 +47,7 @@ const SkillGlobe = () => {
     <Canvas 
        style={{ opacity: isLoaded ? 1 : 0 }} 
        gl={{ powerPreference: "high-performance", preserveDrawingBuffer: true, antialias: true }}
-      camera={{ position: [0, 0, sphereSize+2.5] }}
+      camera={{ position: [0, 0, sphereSize+ 3] }}
     >
 
       {/* Controls for rotating the scene */}
