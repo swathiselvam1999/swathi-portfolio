@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+/* new */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 
 * {
     padding: 0;
@@ -14,13 +14,28 @@
 
 html, body {
   overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: none;
+}
+
+@keyframes gradientRotation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 body {
-    background: #f2e9e4;
-    color: white;
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background: linear-gradient(45deg, #0a0f1f, #0a0f1f, #161033, #2c1b5b);
+  /* background-color: #0f172a; */
+  background-size: 200% 200%;
+  animation: gradientRotation 8s ease-in-out infinite;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 @keyframes spin-slow {
@@ -31,4 +46,6 @@ body {
   .animate-spin-slow {
     animation: spin-slow 8s linear infinite;
   }
+
+  
   

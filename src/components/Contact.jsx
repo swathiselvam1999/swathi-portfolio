@@ -20,11 +20,11 @@ const Contact = () => {
     ];
 
     return (
-        <section id='contact' className='flex justify-center items-center relative z-10 py-20 scroll-mt-16 bg-gray-950/50 p-10 shadow-lg border border-blue-800'>
+        <section id='contact' className='flex justify-center items-center relative z-10 py-10 scroll-mt-16 bg-gray-950/50 p-10 shadow-lg border border-blue-800'>
             <div className='relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center px-6 md:px-12'>
 
                 {/* ✅ Fixed Image Wrapper */}
-                <div className="flex justify-center items-center rounded-full ">
+                <div className="flex justify-center items-center rounded-full  ">
                 <div className="absolute w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
                     <img src={contact} alt="Contact" className='h-[60%] w-[60%] md:w-80 rounded-full border-4 border-blue-500 bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 shadow-[0_0_15px_3px_rgba(0,191,255,0.6)]' loading="lazy" />
                 </div>

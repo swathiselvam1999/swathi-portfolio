@@ -9,9 +9,9 @@ import Experiance from './components/Experiance'
 
 const App = () => {
   return (
-    < >
+    <div className="global-gradient-bg">
       <Header />
-      <div className='pt-20'>
+      <div>
         <Home />
         <About />
         <Projects />
@@ -19,7 +19,7 @@ const App = () => {
         <Skills />
         <Contact />
       </div>
-    </>
+    </div>
   )
 }
 

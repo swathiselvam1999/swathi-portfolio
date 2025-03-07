@@ -3,8 +3,7 @@ import { loadFull } from "tsparticles";
 
 const ParticlesTest = () => {
   const particlesInit = async (engine) => {
-    console.log("Particles Init Called");
-    await loadFull(engine);
+  await loadFull(engine);
   };
 
   return (
@@ -17,17 +16,13 @@ const ParticlesTest = () => {
         },
         particles: {
           number: {
-            value: 80,
-          },
-          move: {
-            enable: true,
-            speed: 2,
+            value: 20,
           },
           shape: {
-            type: "circle",
+            type: "star",
           },
           size: {
-            value: 3,
+            value: 1,
           },
         },
       }}

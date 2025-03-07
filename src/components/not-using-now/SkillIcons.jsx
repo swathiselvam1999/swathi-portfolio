@@ -1,13 +1,13 @@
 import React from "react";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNode, FaBootstrap } from "react-icons/fa";
-import { SiExpress, SiTailwindcss, SiMongodb, SiRedux, SiGraphql, SiNextdotjs } from "react-icons/si";
+import { SiExpress, SiTailwindcss, SiMongodb, SiRedux,  } from "react-icons/si";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { Html } from "@react-three/drei";
 
 const SkillIcons = ({ sphereSize }) => {
   const groupRef = useRef();
-  const iconSize = sphereSize === 1.5 ? 10 : sphereSize === 2 ? 20 : 35;
+  const iconSize = sphereSize === 1.5 ? 10 : sphereSize === 2 ? 20 : 50;
 
   const skillIcons = [
     { icon: <FaHtml5 color="#E34F26" size={iconSize} />, position: [sphereSize + 0.2, 1.1, 0] },

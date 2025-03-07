@@ -39,15 +39,15 @@ const Projects = () => {
     const projectsToShow = showAll ? allProjects : allProjects.slice(0, 3);
 
     return (
-        <section id='projects' className='relative z-10 py-20'>
-            <div className='mb-10'>
-                <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 text-transparent bg-clip-text text-center'>Projects</h1>
+        <section id='projects' className='relative z-10 py-10'>
+            <div className=''>
+                <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 text-transparent bg-clip-text text-center pb-10 bg-bgColor'>Projects</h1>
             </div>
-            <div className='flex flex-col gap-10 items-center'>
+            <div className='flex flex-col gap-10 items-center bg-bgColor'>
                 {projectsToShow.map((project, index) => (
                     <div key={index} className={`flex flex-col md:flex-row items-center gap-5 max-w-4xl w-full ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                         <img className='w-[80%] md:w-[20rem] h-auto object-cover rounded-lg' src={project.image} alt={project.title} />
-                        <div className='w-[80%] md:w-1/2 p-0 md:p-5 text-center md:text-left bg-gray-900'>
+                        <div className='w-[80%] md:w-1/2 p-0 md:p-5 text-center md:text-left text-white '>
                             <h2 className='text-xl md:text-2xl font-bold'>{project.title}</h2>
                             <p className='mt-2'>{project.desc}</p>
                             <a className='px-4 py-2 mt-3 inline-flex items-center gap-2 bg-blue-500 text-white font-semibold rounded-full border border-solid  hover:bg-blue-600 transition-transform hover:scale-105 duration-300 shadow-[0_0_15px_3px_rgba(0,191,255,0.2)] ' href={project.link} target='_blank' rel='noopener noreferrer '>View <FiExternalLink /></a>

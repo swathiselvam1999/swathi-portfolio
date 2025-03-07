@@ -28,7 +28,7 @@ export default {
         
       },
       colors: {
-        bgColor: "#22223B",
+        bgColor: "#0f172a",
       },
     },
   },

@@ -16,7 +16,8 @@ const rightVariant = {
 
 const About = () => {
     return (
-        <section id="about" className='relative z-10 py-20 flex justify-center items-center text-white'>
+
+        <section id="about" className='relative z-10 py-10 flex justify-center items-center text-white'>
             <div className='grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-8 md:px-16 items-center'>
                 <motion.div
                     // className="bg-red-500 text-white p-10 rounded-lg text-xl font-bold"
@@ -27,11 +28,11 @@ const About = () => {
                 >
 
                     {/* Left Section - Text Content */}
-                    <div className='flex flex-col justify-center items-center md:items-start bg-gray-900'>
-                        <h3 className='text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text'>
+                    <div className='flex flex-col justify-center items-center md:items-start '>
+                        <h3 className='text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text bg-bgColor'>
                             About Me
                         </h3>
-                        <p className='my-9 md:mx-0 text-justify  leading-relaxed text-gray-300 '>
+                        <p className='my-9 text-sm md:text-base lg:text-lg md:mx-0 text-justify leading-relaxed bg-bgColor'>
                             "I am a Front-End Developer with one year of experience in building responsive, interactive, and user-friendly web applications. Proficient in HTML5, CSS3, and JavaScript, I have hands-on expertise in React.js, Tailwind CSS, and Redux, ensuring seamless UI development with clean, maintainable code. Beyond frontend, I have experience in Node.js, Express.js, and MongoDB, having developed small full-stack applications. Passionate about transforming design concepts into functional web experiences, I thrive on attention to detail and optimizing performance. Constantly learning and evolving, I aim to build intuitive and scalable web solutions that enhance user engagement." 🚀
                         </p>
 
