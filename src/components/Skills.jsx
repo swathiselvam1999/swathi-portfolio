@@ -24,7 +24,7 @@ export default function AnimatedSkills() {
 
       <div className="w-full overflow-hidden">
         <motion.div
-          className="flex whitespace-nowrap"
+            className="flex whitespace-nowrap gap-4 sm:gap-6 md:gap-16"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
@@ -35,8 +35,8 @@ export default function AnimatedSkills() {
         >
           {/* Render skills twice to create an infinite loop effect */}
           {[...skills, ...skills].map((skill, index) => (
-            <div key={index} className="flex flex-col items-center mx-6 font-semibold text-white min-w-[150px] bg-bgColor">
-              <div className="text-4xl md:text-6xl">{skill.icon}</div>
+            <div key={index} className="flex flex-col items-center font-semibold text-whitebg-bgColor">
+              <div className="text-xl md:text-4xl">{skill.icon}</div>
               <div className="mt-2">{skill.name}</div>
             </div>
             

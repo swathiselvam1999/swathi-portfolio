@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {/* Dropdown Toggle for Mobile */}
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <button
               onClick={toggleButton}
               className="text-white text-3xl focus:outline-none"
@@ -90,7 +90,7 @@ const Header = () => {
           </div>
 
           {/* Full Menu for Larger Screens */}
-          <div className={`lg:flex hidden items-center`}>
+          <div className={`md:flex hidden items-center`}>
             <ul className="flex text-xl">
               {["Home", "About", "Skills", "Projects", "Contact"].map(
                 (item) => (

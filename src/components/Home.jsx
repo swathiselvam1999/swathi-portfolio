@@ -13,12 +13,12 @@ const Home = () => {
 
 
   return (
-    <section id="home" className="relative py-20 flex justify-center items-center scroll-mt-16 text-white">
+    <section id="home" className="relative py-10 flex justify-center items-center scroll-mt-16 text-white">
 
       <ParticlesTest />
 
       {/* Main Content */}
-      <div className="relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center px-6 md:px-12 pt-10 ">
+      <div className="relative z-10 grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center px-6 md:px-12 pt-20 ">
 
       {/* <div class="relative w-full h-screen "></div> */}
 
