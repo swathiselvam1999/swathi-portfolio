@@ -15,9 +15,9 @@ const skills = [
   { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
 ];
 
-export default function AnimatedSkills() {
+const Skills = () => {
   return (
-    <div className="relative pt-10 pb-20 w-full flex flex-col items-center justify-center overflow-hidden">
+    <div id="skills" className="relative pt-10 pb-20 w-full flex flex-col items-center justify-center overflow-hidden" >
       <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-10">
         Skills
       </h2>
@@ -46,3 +46,5 @@ export default function AnimatedSkills() {
     </div>
   );
 }
+
+export default Skills

@@ -13,7 +13,7 @@ const Home = () => {
 
 
   return (
-    <section id="home" className="relative py-10 flex justify-center items-center scroll-mt-16 text-white">
+    <section id="home" className="relative py-10 flex justify-center items-center scroll-mt-16 text-white h-100vh">
 
       <ParticlesTest />
 
@@ -26,12 +26,6 @@ const Home = () => {
         {/* Right Section - Profile Image */}
         <div className="relative p-1 rounded-full flex justify-center items-center group">
           <div className="absolute w-[14rem] h-[14rem] sm:h-[22rem] sm:w-[22rem] md:w-[22rem] md:h-[22rem] rounded-full border-[3px] border-blue-500 border-opacity-50"></div>
-
-          {/* <div className="bg-blue-500 sm:bg-green-500 md:bg-yellow-500 lg:bg-red-500 xl:bg-purple-500 2xl:bg-pink-500">
-          Responsive Box
-        </div> */}
-
-        
 
           <img
             src={profile}
