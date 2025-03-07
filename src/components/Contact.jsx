@@ -5,11 +5,7 @@ import { FiMail } from "react-icons/fi";
 import contact from "../assets/contact.jpg";
 
 const Contact = () => {
-    const [key, setKey] = useState(0);
-
-    useEffect(() => {
-        setKey(prevKey => prevKey + 1); 
-    }, []);
+   
 
     const socialLinks = [
         { href: "https://www.linkedin.com/in/swathi-web-developer", icon: FaLinkedin, color: "text-blue-500" },
@@ -39,32 +35,21 @@ const Contact = () => {
                     </p>
 
                     {/* ✅ Fixed Icons Alignment */}
-                    <motion.div
-                        className="flex gap-6 text-2xl md:text-4xl mt-8"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                    >
+                    <div className="flex gap-6 text-2xl md:text-4xl mt-8">
                         {socialLinks.map((link, index) => {
-                            const Icon = link.icon;
                             return (
-                                <motion.a
-                                    key={index}
-                                    href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    variants={{
-                                        hidden: { y: 50, opacity: 0 },
-                                        visible: { y: [0, -10, 0], opacity: 1 },
-                                    }}
-                                    transition={{ duration: 0.2, ease: "easeOut", delay: index * 0.2 }}
-                                    whileHover={{ scale: 1.1 }}
-                                >
-                                    <Icon className={` ${link.color} transition-transform duration-300 text-2xl md:text-4xl hover:scale-110`} />
-                                </motion.a>
+                                <a
+                                key={index}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-transform duration-300 hover:scale-110"
+                            >
+                                <link.icon className={`${link.color} text-3xl md:text-4xl`} />
+                            </a>
                             );
                         })}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>
