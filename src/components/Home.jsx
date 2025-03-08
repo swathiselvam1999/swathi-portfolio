@@ -13,7 +13,7 @@ const Home = () => {
 
 
   return (
-    <section id="home" className="relative py-0 md:py-10 flex flex-col justify-center items-center scroll-mt-16 text-white">
+    <section id="home" className="relative pt-20 pb-10 flex flex-col justify-center items-center scroll-mt-16 text-white">
 
       <ParticlesTest />
 
