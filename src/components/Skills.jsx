@@ -17,7 +17,11 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div id="skills" className="relative pt-10 pb-20 w-full flex flex-col items-center justify-center overflow-hidden" >
+    
+    // <section id="about" className='relative z-10 py-10 flex justify-center items-center text-white '>
+
+    <section id="skills" className="relative z-10 py-10 flex justify-center items-center text-white " >
+      <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-10">
         Skills
       </h2>
@@ -43,7 +47,9 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+      </div>
+      
+    </section>
   );
 }
 

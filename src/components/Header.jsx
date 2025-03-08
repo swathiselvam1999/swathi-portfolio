@@ -92,7 +92,7 @@ const Header = () => {
           {/* Full Menu for Larger Screens */}
           <div className={`md:flex hidden items-center`}>
             <ul className="flex text-xl">
-              {["Home", "About", "Skills", "Projects", "Contact"].map(
+              {["Home", "About",  "Projects", "Skills" ,"Contact"].map(
                 (item) => (
                   <li key={item}>
                     <a

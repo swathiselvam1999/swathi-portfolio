@@ -44,6 +44,11 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
+section {
+  scroll-margin-top: 4rem; /* Adjust this to your navbar height */
+}
+
+
 @keyframes spin-slow {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
