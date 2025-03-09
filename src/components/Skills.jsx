@@ -17,38 +17,42 @@ const skills = [
 
 const Skills = () => {
   return (
-    
+
     // <section id="about" className='relative z-10 py-10 flex justify-center items-center text-white '>
 
     <section id="skills" className="relative z-10 py-10 flex justify-center items-center text-white " >
       <div className="w-full flex flex-col items-center justify-center overflow-hidden">
-      <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-10">
-        Skills
-      </h2>
+        <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text mb-10">
+          Skills
+        </h2>
 
-      <div className="w-full overflow-hidden">
-        <motion.div
-            className="flex whitespace-nowrap gap-4 sm:gap-6 md:gap-16"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{
-            repeat: Infinity,
-            duration: 25, // Slower speed
-            ease: "linear",
-          }}
-          style={{ display: "flex", width: "max-content" }}
-        >
-          {/* Render skills twice to create an infinite loop effect */}
-          {[...skills, ...skills].map((skill, index) => (
-            <div key={index} className="flex flex-col items-center font-semibold text-whitebg-bgColor">
-              <div className="text-xl md:text-4xl">{skill.icon}</div>
-              <div className="mt-2">{skill.name}</div>
-            </div>
-            
+        <div className="relative w-full flex overflow-hidden">
+          {[...Array(2)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="flex whitespace-nowrap gap-4 sm:gap-6 md:gap-16"
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{
+                repeat: Infinity,
+                duration: 20, // Slower speed
+                ease: "linear",
+              }}
+              style={{ display: "flex", width: "max-content" }}
+            >
+              {/* Render skills twice to create an infinite loop effect */}
+              {skills.map((skill, index) => (
+                <div key={index} className="flex flex-col items-center font-semibold text-whitebg-bgColor">
+                  <div className="text-xl md:text-4xl">{skill.icon}</div>
+                  <div className="mt-2">{skill.name}</div>
+                </div>
+
+              ))}
+            </motion.div>
           ))}
-        </motion.div>
+
+        </div>
       </div>
-      </div>
-      
+
     </section>
   );
 }
