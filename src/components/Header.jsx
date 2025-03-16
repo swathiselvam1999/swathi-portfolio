@@ -52,7 +52,7 @@ const Header = () => {
       {/* Navbar */}
       <nav
         className="fixed left-1/2 transform -translate-x-1/2 w-full 
-      bg-[#0f172a] text-white py-4 px-8 shadow-lg 
+      bg-[#0f172a] text-white py-4 px-4 shadow-lg 
       backdrop-blur-md bg-opacity-80 z-50 p-[2px]"
       >
         <div className="flex max-w-7xl mx-auto justify-between items-center">
