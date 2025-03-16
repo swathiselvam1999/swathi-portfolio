@@ -51,7 +51,7 @@ const Header = () => {
     <>
       {/* Navbar */}
       <nav
-        className="fixed  left-1/2 transform -translate-x-1/2 w-full 
+        className="fixed left-1/2 transform -translate-x-1/2 w-full 
       bg-[#0f172a] text-white py-4 px-8 shadow-lg 
       backdrop-blur-md bg-opacity-80 z-50 p-[2px]"
       >
@@ -60,7 +60,7 @@ const Header = () => {
           <div className="lg:flex items-center text-white text-2xl md:text-3xl px-2 py-1 cursor-pointer ">
             <motion.div
               href="#home"
-              className="flex bg-clip-text font-bold "
+              className="flex bg-clip-text font-bold"
               variants={containerVariants}
               initial="hidden"
               animate='visible'
@@ -69,9 +69,9 @@ const Header = () => {
                 <motion.span
                   key={index}
                   variants={letterVariants}
-                  style={{
-                    textShadow: "0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(255, 0, 255, 0.8)",
-                  }}
+                  // style={{
+                  //   textShadow: "0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(255, 0, 255, 0.8)",
+                  // }}
                 >
                   {letter}
                 </motion.span>
