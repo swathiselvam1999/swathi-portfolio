@@ -16,6 +16,20 @@ const Projects = () => {
             link: 'https://notes-app-x9jc.onrender.com/',
         },
         {
+            title: "JobRinger",
+            image: projectslearner,
+            desc: "Jobringer.com is a feature-rich Indian job portal leveraging AI technology to connect employers with jobseekers across diverse industries. It offers free job postings, resume access, and a user-friendly platform tailored to current market needs. ",
+            technology: "HTML, CSS, JavaScript, ReactJS, Tailwind CSS",
+            link: 'https://swathiselvam1999.github.io/jobRinger-Assesment/',
+        },
+        {
+            title: "MovieBite",
+            image: MovieBite,
+            desc: "A stylish movie browsing app built using React, showcasing trending and popular films.",
+            technology: "HTML, CSS, JavaScript, React, Tailwind CSS",
+            link: 'https://swathiselvam1999.github.io/MovieBite/',
+        },
+        {
             title: "Projects Learner",
             image: projectslearner,
             desc: "An intuitive project management platform with efficient task tracking and collaboration features.",
@@ -35,13 +49,6 @@ const Projects = () => {
             desc: "A personal portfolio website showcasing my skills, projects, and experience.",
             technology: "HTML, CSS, JavaScript, React, Tailwind CSS",
             link: 'https://swathiselvam1999.github.io/swathi-portfolio/',
-        },
-        {
-            title: "MovieBite",
-            image: MovieBite,
-            desc: "A stylish movie browsing app built using React, showcasing trending and popular films.",
-            technology: "HTML, CSS, JavaScript, React, Tailwind CSS",
-            link: 'https://swathiselvam1999.github.io/MovieBite/',
         },
     ];
 
