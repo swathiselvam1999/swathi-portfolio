@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MyNotes from '../assets/MyNotes.png';
+import JobRinger from "../assets/JobRinger.png"
 import MovieBite from '../assets/MovieBite.png';
 import Portfolio from "../assets/Portfolio.png";
 import weatherApp from "../assets/weatherApp.png";
@@ -17,7 +18,7 @@ const Projects = () => {
         },
         {
             title: "JobRinger",
-            image: projectslearner,
+            image: JobRinger,
             desc: "Jobringer.com is a feature-rich Indian job portal leveraging AI technology to connect employers with jobseekers across diverse industries. It offers free job postings, resume access, and a user-friendly platform tailored to current market needs. ",
             technology: "HTML, CSS, JavaScript, ReactJS, Tailwind CSS",
             link: 'https://swathiselvam1999.github.io/jobRinger-Assesment/',
