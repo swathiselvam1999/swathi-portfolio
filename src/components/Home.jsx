@@ -52,7 +52,7 @@ const Home = () => {
 
             {/* Typing Animation for Roles */}
             <TypeAnimation
-              sequence={["Web Developer", 1000, "React Developer", 1000, "Frontend Developer", 1000]}
+              sequence={["Web Developer", 1000, "React Developer", 1000, "Frontend Developer", 1000, "MERN Stack Developer", 1000]}
               wrapper="h2"
               speed={50}
               repeat={Infinity}

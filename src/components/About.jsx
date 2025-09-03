@@ -1,6 +1,5 @@
-import React from 'react';
 import profile from '../assets/about-me.png';
-import resume from '../assets/swathi_resume.pdf';
+import resume from '../assets/Swathi-CV.pdf';
 import { MdOutlineFileDownload } from "react-icons/md";
 import { motion } from 'framer-motion';
 

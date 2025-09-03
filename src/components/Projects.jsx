@@ -5,10 +5,25 @@ import MovieBite from '../assets/MovieBite.png';
 import Portfolio from "../assets/Portfolio.png";
 import weatherApp from "../assets/weatherApp.png";
 import projectslearner from "../assets/projectslearner.png";
+import MetalMaster from "../assets/MetalMaster.png"
 import { FiExternalLink } from 'react-icons/fi';
 
 const Projects = () => {
     const allProjects = [
+        {
+            title: "Metal Master",
+            image: MetalMaster,
+            desc: "The Metal Management System is a MERN stack web app that allows CRUD operations for metal purity and metal records. It includes advanced filtering to easily manage and organize different metals with their purity levels.",
+            technology: "HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, MongoDB",
+            link: 'https://metal-frontend-flame.vercel.app/purity',
+        },
+        {
+            title: "MovieBite",
+            image: MovieBite,
+            desc: "A stylish movie browsing app built using React, showcasing trending and popular films.",
+            technology: "HTML, CSS, JavaScript, React, Tailwind CSS",
+            link: 'https://swathiselvam1999.github.io/MovieBite/',
+        },
         {
             title: "MyNotes",
             image: MyNotes,
@@ -22,13 +37,6 @@ const Projects = () => {
             desc: "Jobringer.com is a feature-rich Indian job portal leveraging AI technology to connect employers with jobseekers across diverse industries. It offers free job postings, resume access, and a user-friendly platform tailored to current market needs. ",
             technology: "HTML, CSS, JavaScript, ReactJS, Tailwind CSS",
             link: 'https://swathiselvam1999.github.io/jobRinger-Assesment/',
-        },
-        {
-            title: "MovieBite",
-            image: MovieBite,
-            desc: "A stylish movie browsing app built using React, showcasing trending and popular films.",
-            technology: "HTML, CSS, JavaScript, React, Tailwind CSS",
-            link: 'https://swathiselvam1999.github.io/MovieBite/',
         },
         {
             title: "Projects Learner",
